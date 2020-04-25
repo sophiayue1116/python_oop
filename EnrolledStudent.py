@@ -21,7 +21,7 @@ class Student:
 class EnrolledStudent(Person, Student):
     def __init__(self, name, age, studentId, subject, enrolled_date):
         Person.__init__(self, name, age)   # multiple inheritance need to specify the parent
-        Student.__init__(self, studentId, subject)
+        Student.__init__(self, studentId, subject) # multiple inheritance need to specify the parent
         self.enrolled_date = enrolled_date
 
     def getDate(self):
